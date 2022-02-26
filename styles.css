@@ -129,12 +129,27 @@ article {
 }
 
 .grid-table {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 35px);
+    grid-template-rows: repeat(11, 35px);
     border-top: 1px solid black;
     border-right: 1px solid black;
-    background: repeating-linear-gradient(#ddd 0 35px, white 35px 70px);
+    background: repeating-linear-gradient(#dcccf3 0 35px, #ffffff 35px 70px);
+}
+
+.loader {
+    margin: auto;
+    border: 15px solid #000000;
+    border-top: 15px solid #d9a9ff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .grid-table span {
