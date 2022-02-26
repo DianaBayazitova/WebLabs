@@ -74,13 +74,13 @@ p {
 }
 
 .photo-gallery {
-    height: 200px;
+    /*height: 200px;*/
     width: 50%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    display: flex;
+    /*overflow-x: scroll;*/
+    /*overflow-y: hidden;*/
+    /*scroll-snap-type: x mandatory;*/
+    /*scroll-behavior: smooth;*/
+    /*display: flex;*/
 }
 
 .photo-gallery .lil-nav {
@@ -184,6 +184,23 @@ article {
 table td {
     border: 1px solid black;
     height: 30px;
+}
+
+.embla {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.embla__container {
+    display: flex;
+}
+.embla__slide {
+    margin-right: 13px;
+    flex: 0 0 300px;
+    position: relative;
+}
+.embla__slide img {
+    height: 200px;
+    width: 300px;
 }
 
 @media screen and (max-device-width: 700px), (max-width: 700px) {

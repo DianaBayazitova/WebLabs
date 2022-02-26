@@ -15,12 +15,18 @@
                 createSpan(gridTable, today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate());
                 createSpan(gridTable, item.email);
             });
+        })
+        .catch(error => {
+            console.warn('Something went wrong:(');
+            spinner.remove();
+            const footer = document.querySelector('footer');
+            createSpan(footer, 'Something went wrong:(');
         });
 })()
 
-const createSpan = (table, value) => {
+const createSpan = (element, value) => {
     let span = document.createElement('span');
     let text = document.createTextNode(value);
     span.appendChild(text);
-    table.appendChild(span);
+    element.appendChild(span);
 }

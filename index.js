@@ -11,3 +11,11 @@ document.getElementById('page-loading').innerHTML =
         console.log('Page loading time: ' + pageLoadTime);
         return 'Page loading time: ' + pageLoadTime / 1000 + 's';
     })();
+
+
+// Find node for carousel
+const emblaNode = document.querySelector('.embla')
+// Set options
+const options = { loop: true, align: 'start' }
+// Create carousel
+EmblaCarousel(emblaNode, options)
